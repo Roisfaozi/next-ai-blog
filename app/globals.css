@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply max-w-[1440px] w-full bg-white dark:bg-black justify-center items-start mx-auto md:px-[30px];
+}
