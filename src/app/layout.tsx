@@ -1,4 +1,5 @@
-import { ThemeProvider } from '@/Components/ThemeProvider'
+import NavBar from '@/src/Components/Navbar'
+import { ThemeProvider } from '@/src/Components/ThemeProvider'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" >
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NavBar />
           {children}
         </ThemeProvider>
       </body>
