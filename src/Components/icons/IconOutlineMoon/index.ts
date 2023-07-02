@@ -1,0 +1,2 @@
+export { IconOutlineMoon } from "./IconOutlineMoon";
+
