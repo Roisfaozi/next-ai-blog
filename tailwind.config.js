@@ -17,6 +17,10 @@ module.exports = {
       boxShadow: {
         poster: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
       },
+      colors: {
+        dark: '#090D1F',
+        bgdark: '#1A1A1A',
+      },
     },
   },
   future: {

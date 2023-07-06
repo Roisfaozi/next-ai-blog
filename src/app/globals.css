@@ -6,7 +6,22 @@ html {
   font-size: 100%;
 }
 body {
-  @apply box-border max-w-[1440px] h-[1080px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-0 bg-white dark:bg-[#090D1F] text-[#667085] dark:text-[#C0C5D0];
+  @apply box-border max-w-[1440px] h-[1080px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-0 bg-white dark:bg-dark text-[#667085] dark:text-[#C0C5D0];
+}
+.header {
+  @apply py-[30px] sticky w-full;
+}
+
+.navbar {
+  @apply text-bgdark dark:text-white flex items-center justify-between py-[10px] relative w-full;
+}
+
+.logo {
+  @apply text-[20px] font-semibold leading-normal;
+}
+
+.menu {
+  @apply justify-start items-start gap-3.5 flex;
 }
 
 .text-primary {
@@ -16,16 +31,28 @@ body {
 .text-primary:hover {
   @apply text-[#8a95ac] dark:text-[#d5d9e1];
 }
-.header_nav {
-  @apply sm:list-none flex justify-start items-start relative;
-}
+
 .header_nav > * ~ * {
   @apply sm:ml-8 ml-0;
 }
-.header_nav li {
-  @apply py-1 px-0 relative text-white text-[20px] leading-normal after:absolute after:bottom-0 after:left-1/2 after:w-0 after:-translate-x-1/2 after:transition-width after:duration-300 after:ease-in after:h-[1px] after:bg-white;
+.menu li {
+  @apply list-none p-2 relative w-fit after:absolute after:-bottom-0.5 after:left-1/2 after:w-0 after:-translate-x-1/2 after:transition-width after:duration-300 after:ease-in after:h-[1px] after:dark:bg-white after:bg-dark;
 }
 
-.header_nav li.active {
-  @apply after:w-full;
+.menu .active {
+  @apply font-bold after:w-full;
+}
+
+.link {
+  @apply text-dark dark:text-white text-[20px] leading-[24px] -mt-[1px] relative inline;
+}
+
+.toggle-mode {
+  @apply w-24 h-10 px-4 py-2 bg-dark dark:bg-white rounded-[29px] relative items-start gap-4 flex;
+}
+
+.icon-instance-node {
+  height: 24px !important;
+  min-width: 24px !important;
+  position: relative !important;
 }
