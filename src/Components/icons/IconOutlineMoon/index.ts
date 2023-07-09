@@ -1,2 +1,1 @@
-export { IconOutlineMoon } from "./IconOutlineMoon";
-
+export { IconOutlineMoon } from './IconOutlineMoon'

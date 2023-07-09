@@ -13,13 +13,31 @@ module.exports = {
       },
       transitionProperty: {
         width: 'width',
+        height: 'height',
       },
       boxShadow: {
         poster: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
       },
       colors: {
         dark: '#090D1F',
-        bgdark: '#1A1A1A',
+        textdark: '#1A1A1A',
+      },
+      animation: {
+        burger: 'disapear 800ms ease-in-out',
+      },
+      keyframes: {
+        disapear: {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '25%': { transform: 'scale(0.75);', opacity: '0.75' },
+          '50%': { transform: 'scale(0.35)', opacity: '0.35' },
+          '75%': { transform: 'scale(0);', opacity: '0' },
+        },
+        disapear: {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '25%': { transform: 'scale(0.75);', opacity: '0.75' },
+          '50%': { transform: 'scale(0.35)', opacity: '0.35' },
+          '75%': { transform: 'scale(0);', opacity: '0' },
+        },
       },
     },
   },

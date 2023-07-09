@@ -4,37 +4,39 @@
 
 html {
   font-size: 100%;
+  border: none;
 }
 body {
-  @apply box-border max-w-[1440px] h-[1080px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-0 bg-white dark:bg-dark text-[#667085] dark:text-[#C0C5D0];
+  @apply box-border max-w-[1440px] h-[2000px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-5 bg-white dark:bg-dark text-[#667085] dark:text-[#C0C5D0];
 }
 .header {
-  @apply py-[30px] sticky w-full;
+  @apply bg-white dark:bg-dark lg:py-[30px] md:py-[20px] py-5 sm:top-0 sm:sticky fixed left-0 sm:px-0 px-5 w-full;
 }
 
 .navbar {
-  @apply text-bgdark dark:text-white flex items-center justify-between py-[10px] relative w-full;
+  @apply text-textdark dark:text-white flex items-center md:py-[10px] py-0 relative w-full sm:h-full transition-all duration-500;
+}
+
+.navbar-responsive {
+  @apply flex-col justify-around h-screen;
 }
 
 .logo {
-  @apply text-[20px] font-semibold leading-normal;
+  @apply md:text-xl text-lg font-semibold leading-6;
+}
+
+.menu-wrapper {
+  @apply inline-flex items-center w-full;
+}
+
+.wrapper {
+  @apply flex-col justify-center items-center gap-[54px] w-screen h-[80%];
 }
 
 .menu {
-  @apply justify-start items-start gap-3.5 flex;
+  @apply justify-start items-center sm:gap-3.5 gap-5 sm:flex;
 }
 
-.text-primary {
-  @apply text-[#667085] dark:text-[#C0C5D0];
-}
-
-.text-primary:hover {
-  @apply text-[#8a95ac] dark:text-[#d5d9e1];
-}
-
-.header_nav > * ~ * {
-  @apply sm:ml-8 ml-0;
-}
 .menu li {
   @apply list-none p-2 relative w-fit after:absolute after:-bottom-0.5 after:left-1/2 after:w-0 after:-translate-x-1/2 after:transition-width after:duration-300 after:ease-in after:h-[1px] after:dark:bg-white after:bg-dark;
 }
@@ -44,15 +46,35 @@ body {
 }
 
 .link {
-  @apply text-dark dark:text-white text-[20px] leading-[24px] -mt-[1px] relative inline;
+  @apply text-dark dark:text-white md:text-xl text-lg font-normal leading-6 relative inline;
+}
+
+.navbar-responsive .hamburger {
+  @apply !p-5;
+}
+
+.hamburger {
+  @apply block p-0 sm:hidden;
 }
 
 .toggle-mode {
   @apply w-24 h-10 px-4 py-2 bg-dark dark:bg-white rounded-[29px] relative items-start gap-4 flex;
 }
 
+.toggle-btn {
+  @apply w-6 h-6 absolute dark:bg-dark bg-white rounded-2xl border-none transform left-4 duration-200 ease-out;
+}
+
 .icon-instance-node {
   height: 24px !important;
   min-width: 24px !important;
   position: relative !important;
+}
+
+.text-primary {
+  @apply text-[#667085] dark:text-[#C0C5D0];
+}
+
+.text-primary:hover {
+  @apply text-[#8a95ac] dark:text-[#d5d9e1];
 }

@@ -1,8 +1,8 @@
 export const IconOutlineSun = ({ className }: any) => {
   return (
     <svg
-      className={`icon-outline-sun ${className}`}
-      fill="none"
+      className={`${className} icon-instance-node`}
+      fill="currentColor"
       height="24"
       viewBox="0 0 24 24"
       width="24"
