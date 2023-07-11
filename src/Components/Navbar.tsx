@@ -49,7 +49,7 @@ function NavBar() {
             navbar === false ?
               <IconHamburger fill={fill} tabIndex={0} className='animate-burger' />
               :
-              <IconClose fill={fill} tabIndex={0} className='animate-burger' />
+              <IconClose fill={fill} tabIndex={0} className='animate-apear' />
           }
 
         </div>
