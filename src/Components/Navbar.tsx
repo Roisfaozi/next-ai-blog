@@ -31,20 +31,20 @@ function NavBar() {
 
   const fill = theme === 'dark' ? 'white' : '#1A1A1A'
   return (
-    <header className="header">
-      <nav className={`navbar ${navbar === false ? 'justify-between h-[32px]' : 'navbar-responsive'}`}
+    <header className={`bg-white dark:bg-dark lg:py-[30px] md:py-[20px] py-5 sm:top-0 sm:sticky fixed left-0 sm:px-0 px-5 w-full`}>
+      <nav className={`text-textdark dark:text-white flex items-center md:py-[10px] py-0 relative w-full sm:h-full transition-all duration-500 ${navbar === false ? 'justify-between h-[32px]' : 'flex-col justify-around h-screen'}`}
 
       >
-        <div className={`menu-wrapper ${navbar === false ? 'justify-between' : 'wrapper'}`}
+        <div className={`inline-flex items-center w-full ${navbar === false ? 'justify-between' : 'flex-col justify-center items-center gap-[54px] w-screen h-[80%]'}`}
 
         >
-          <div className="logo">Your Name</div>
+          <div className="md:text-xl text-lg font-semibold leading-6o">Your Name</div>
 
           <Navlink navbar={navbar} >
             <DarkModeToggle />
           </Navlink>
         </div>
-        <div className="hamburger" ref={btnRef} onClick={() => setNavbar(!navbar)} tabIndex={0} >
+        <div className="block p-0 sm:hidden" ref={btnRef} onClick={() => setNavbar(!navbar)} tabIndex={0} >
           {
             navbar === false ?
               <IconHamburger fill={fill} tabIndex={0} className='animate-burger' />
@@ -90,9 +90,9 @@ function DarkModeToggle({ tabIndex = 0 }) {
       tabIndex={0}
       onKeyDown={handleKeyDown}
       onClick={handleClick}
-      className={`toggle-mode ${theme === 'light' ? '' : 'justify-end'}`}
+      className={`w-24 h-10 px-4 py-2 bg-dark dark:bg-white rounded-[29px] relative items-start gap-4 flex ${theme === 'light' ? '' : 'justify-end'}`}
     >
-      <div className={`toggle-btn ${theme === 'light' ? 'translate-x-10' : 'translate-x-0 '}`} />
+      <div className={`w-6 h-6 absolute dark:bg-dark bg-white rounded-2xl border-none transform left-4 duration-100 ease-out ${theme === 'light' ? 'translate-x-10' : 'translate-x-0 '}`} />
 
       {theme === 'light' ? (
         <IconOutlineSun />
