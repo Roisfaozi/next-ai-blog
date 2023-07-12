@@ -6,7 +6,7 @@ import { navigation } from '../utils/constants'
 
 type Props = {
   navbar: boolean
-  children?: any
+  children?: React.ReactNode
 }
 
 function Navlink({ children, navbar }: Props) {
