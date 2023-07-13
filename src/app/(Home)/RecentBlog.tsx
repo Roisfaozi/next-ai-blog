@@ -8,7 +8,7 @@ function RecentBlog({ }: Props) {
   return (
     <div className="w-full py-[30px] flex-col justify-start items-start md:items-center gap-16 inline-flex">
       <div className="self-stretch h-[1400px] flex-col justify-start items-start gap-8 flex">
-        <SubHeading >
+        <SubHeading level={2} className='text-dark dark:text-white text-2xl font-semibold leading-loose' >
           Recent blog posts
         </SubHeading>
         <CardContainer>

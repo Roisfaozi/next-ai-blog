@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-type Props = { children: React.ReactNode }
+type Props = {
+  children: React.ReactNode,
+  level: any,
+  className?: string;
+}
 
-function SubHeading({ children }: Props) {
+function SubHeading({ children, level, className }: Props) {
+  const CustomHeading = `h${level}` as keyof JSX.IntrinsicElements
   return (
-    <h2 className="Heading self-stretch text-dark dark:text-white text-2xl font-semibold leading-loose">{children}</h2>
+    <CustomHeading className={className}>{children}</CustomHeading>
   )
 }
 
