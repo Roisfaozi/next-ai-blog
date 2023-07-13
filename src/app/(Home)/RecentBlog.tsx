@@ -1,4 +1,5 @@
 import SubHeading from '@/src/Components/SubHeading'
+import CardContainer from './CardContainer'
 
 type Props = {}
 
@@ -9,7 +10,7 @@ function RecentBlog({ }: Props) {
         <SubHeading >
           Recent blog posts
         </SubHeading>
-        <div className="Content self-stretch h-[1336px] flex-col justify-start items-start gap-8 flex">
+        <CardContainer>
           <div className="BlogPostCard self-stretch h-[448px] flex-col justify-start items-start gap-6 flex">
             <img className="Image w-[326px] h-[228px] relative" src="https://via.placeholder.com/326x228" />
             <div className="Content self-stretch h-[196px] flex-col justify-start items-start gap-6 flex">
@@ -92,7 +93,7 @@ function RecentBlog({ }: Props) {
               </div>
             </div>
           </div>
-          S</div>
+        </CardContainer>
       </div>
     </div>
   )
