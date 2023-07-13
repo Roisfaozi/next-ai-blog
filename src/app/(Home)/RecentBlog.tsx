@@ -12,7 +12,7 @@ function RecentBlog({ }: Props) {
           Recent blog posts
         </SubHeading>
         <CardContainer>
-          <Card />
+          <Card imageHeight='h-[228px]' />
           <div className="Column self-stretch h-[856px] flex-col justify-center items-start gap-8 flex">
             <div className="BlogPostCard self-stretch h-[412px] flex-col justify-start items-start gap-6 flex">
               <img className="Image w-80 h-[200px] relative" src="https://via.placeholder.com/320x200" />
