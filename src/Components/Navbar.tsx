@@ -31,11 +31,11 @@ function NavBar() {
 
   const fill = theme === 'dark' ? 'white' : '#1A1A1A'
   return (
-    <header className={`bg-white dark:bg-dark lg:py-[30px] md:py-[20px] py-5 sm:top-0 sm:sticky fixed left-0 sm:px-0 px-5 w-full`}>
-      <nav className={`text-textdark dark:text-white flex items-center md:py-[10px] py-0 relative w-full sm:h-full transition-all duration-500 ${navbar === false ? 'justify-between h-[32px]' : 'flex-col justify-around h-screen'}`}
+    <header className={`bg-white dark:bg-dark lg:py-[30px] md:py-[20px] py-5 sm:top-0 sm:sticky fixed left-0 sm:px-0 px-5 w-full z-30`}>
+      <nav className={`text-textdark dark:text-white bg-white dark:bg-dark flex items-center md:py-[10px] py-0 relative w-full sm:h-full transition-all duration-500 ${navbar === false ? 'justify-between h-[32px]' : 'flex-col justify-around h-screen'}`}
 
       >
-        <div className={`inline-flex items-center w-full ${navbar === false ? 'justify-between' : 'flex-col justify-center items-center gap-[54px] w-screen h-[80%]'}`}
+        <div className={`inline-flex items-center w-full bg-white dark:bg-dark ${navbar === false ? 'justify-between' : 'flex-col justify-center items-center gap-[54px] w-screen h-[80%]'}`}
 
         >
           <div className="md:text-xl text-lg font-semibold leading-6o">Your Name</div>
