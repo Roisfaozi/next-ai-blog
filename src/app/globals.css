@@ -19,7 +19,3 @@ body {
 .text-primary {
   @apply text-[#667085] dark:text-[#C0C5D0];
 }
-
-.text-primary:hover {
-  @apply text-[#8a95ac] dark:text-[#d5d9e1];
-}

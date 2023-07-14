@@ -1,4 +1,6 @@
+import { categories } from '../utils/constants'
 import SubHeading from './SubHeading'
+import Tags from './Tags'
 import { IconArrowUpRight } from './icons/IconArrowUpRight'
 
 
@@ -17,24 +19,15 @@ function CardContent({ }: Props) {
             <IconArrowUpRight className="w-6 h-6 relative" />
           </div>
         </div>
-        <div className="SupportingText self-stretch text-neutral-300 text-base font-normal leading-normal">How do you create compelling presentations that wow your colleagues and impress your managers?</div>
+        <div className="self-stretch text-primary text-base font-normal leading-normal">How do you create compelling presentations that wow your colleagues and impress your managers?</div>
       </div>
-      <div className="Categories self-stretch justify-start items-start gap-2 inline-flex">
-        <div className="Badge justify-start items-start flex">
-          <div className="BadgeBase px-2.5 py-0.5 bg-purple-50 rounded-2xl justify-center items-center flex">
-            <div className="Text text-center text-violet-700 text-sm font-medium leading-tight">Design</div>
-          </div>
-        </div>
-        <div className="Badge justify-start items-start flex">
-          <div className="BadgeBase px-2.5 py-0.5 bg-indigo-50 rounded-2xl justify-center items-center flex">
-            <div className="Text text-center text-indigo-700 text-sm font-medium leading-tight">Research</div>
-          </div>
-        </div>
-        <div className="Badge justify-start items-start flex">
-          <div className="BadgeBase px-2.5 py-0.5 bg-pink-50 rounded-2xl justify-center items-center flex">
-            <div className="Text text-center text-pink-700 text-sm font-medium leading-tight">Presentation</div>
-          </div>
-        </div>
+      <div className="self-stretch justify-start items-start gap-2 inline-flex">
+        {
+          categories.map((category, i) => (
+
+            <Tags key={i} tag={category.tag} color={category.color} />
+          ))
+        }
       </div>
     </div>
   )

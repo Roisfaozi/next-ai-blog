@@ -16,3 +16,18 @@ export const navigation = [
     path: '/newsletter',
   },
 ]
+
+export const categories = [
+  {
+    tag: 'Design',
+    color: 'violet',
+  },
+  {
+    tag: 'Research',
+    color: 'indigo',
+  },
+  {
+    tag: 'Presentation',
+    color: 'pink',
+  },
+]
