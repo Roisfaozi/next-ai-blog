@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import CardContent from './CardContent';
 
-type Props = { imageHeight: string; }
+type Props = { imageHeight: string, className: string }
 
-function Card({ imageHeight }: Props) {
+function Card({ imageHeight, className }: Props) {
   return (
-    <div className="self-stretch w-full flex-col justify-start items-start lg:gap-8 gap-6 flex sm:inline-flex ">
+    <div className={className}>
       <div className={`relative w-full ${imageHeight}`}>
         <Image
           src={`https://via.placeholder.com/326x228`}

@@ -19,3 +19,15 @@ body {
 .text-primary {
   @apply text-[#667085] dark:text-[#C0C5D0];
 }
+@layer utilities {
+  .card-container :first-child {
+    @apply col-span-2 row-span-2;
+  }
+  .card-container :last-child {
+    @apply col-span-4 row-span-2;
+  }
+  .card-container :nth-child(2),
+  :nth-child(3) {
+    @apply col-span-2 row-span-1;
+  }
+}
