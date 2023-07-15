@@ -4,20 +4,19 @@
 
 @layer utilities {
   .card-container :first-child {
-    @apply col-span-2 row-span-2;
+    @apply lg:col-span-2 lg:row-span-2 col-span-3 row-span-1;
   }
   .card-container :last-child {
-    @apply col-span-4 row-span-2;
+    @apply lg:col-span-4 lg:row-span-2 col-span-3 row-span-1;
   }
   .card-container :nth-child(2),
   .card-container :nth-child(3) {
-    @apply col-span-2 row-span-1;
+    @apply lg:col-span-2 lg:row-span-1 col-span-3 row-span-1;
   }
   .card-container > div:nth-child(2) h4,
   .card-container > div:nth-child(3) h4 {
     @apply !text-lg;
   }
-
   .card-container > div:nth-child(2) svg,
   .card-container > div:nth-child(3) svg {
     @apply hidden;
