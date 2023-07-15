@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -49,5 +50,21 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   darkMode: 'class',
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchVariant }) {
+      matchVariant(
+        'nth',
+        (value) => {
+          return `&:nth-child(${value})`
+        },
+        {
+          values: {
+            1: '1',
+            2: '2',
+            3: '3',
+          },
+        }
+      )
+    }),
+  ],
 }

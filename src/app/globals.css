@@ -27,7 +27,16 @@ body {
     @apply col-span-4 row-span-2;
   }
   .card-container :nth-child(2),
-  :nth-child(3) {
+  .card-container :nth-child(3) {
     @apply col-span-2 row-span-1;
+  }
+  .card-container > div:nth-child(2) h4,
+  .card-container > div:nth-child(3) h4 {
+    @apply !text-lg;
+  }
+
+  .card-container > div:nth-child(2) svg,
+  .card-container > div:nth-child(3) svg {
+    @apply hidden;
   }
 }
