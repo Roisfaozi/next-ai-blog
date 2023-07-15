@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import CardContent from './CardContent';
 
-type Props = { imageHeight: string, className: string }
+type Props = { imageHeight: string, className: string, width: string }
 
-function Card({ imageHeight, className }: Props) {
+function Card({ imageHeight, className, width }: Props) {
   return (
     <div className={className}>
-      <div className={`relative w-full ${imageHeight}`}>
+      <div className={`relative w-full bg-green-300 ${imageHeight} ${width}`}>
         <Image
           src={`https://via.placeholder.com/326x228`}
           alt={`image plaeceholder`}
@@ -19,7 +19,7 @@ function Card({ imageHeight, className }: Props) {
 
         />
       </div>
-      <CardContent />
+      <CardContent width={width} />
 
     </div>
   )

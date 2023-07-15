@@ -4,7 +4,7 @@ type Props = { children: React.ReactNode }
 
 function CardContainer({ children }: Props) {
   return (
-    <div className="card-container grid lg:gap-6 gap-8 w-full">{children}</div>
+    <div className="card-container grid grid-cols-4 grid-rows-2 lg:gap-8 gap-6 w-full">{children}</div>
   )
 }
 
