@@ -2,23 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 100%;
-  border: none;
-}
-body {
-  @apply box-border max-w-[1440px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-5 bg-white dark:bg-dark text-[#667085] dark:text-[#C0C5D0];
-}
-
-.icon-instance-node {
-  height: 24px !important;
-  min-width: 24px !important;
-  position: relative !important;
-}
-
-.text-primary {
-  @apply text-[#667085] dark:text-[#C0C5D0];
-}
 @layer utilities {
   .card-container :first-child {
     @apply col-span-2 row-span-2;
@@ -39,4 +22,40 @@ body {
   .card-container > div:nth-child(3) svg {
     @apply hidden;
   }
+}
+
+html {
+  font-size: 100%;
+  border: none;
+}
+body {
+  @apply box-border max-w-[1440px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-5 bg-white dark:bg-dark text-[#667085] dark:text-[#C0C5D0];
+}
+
+.icon-instance-node {
+  height: 24px !important;
+  min-width: 24px !important;
+  position: relative !important;
+}
+
+.text-primary {
+  @apply text-[#667085] dark:text-[#C0C5D0];
+}
+.bg-violet {
+  @apply bg-[#F9F5FF];
+}
+.text-violet {
+  @apply text-[#6941C6];
+}
+.bg-indigo {
+  @apply bg-[#EEF4FF];
+}
+.text-indigo {
+  @apply text-[#3538CD];
+}
+.bg-pink {
+  @apply bg-[#FDF2FA];
+}
+.text-pink {
+  @apply text-[#C11574];
 }

@@ -3,10 +3,10 @@ import SubHeading from './SubHeading'
 import Tags from './Tags'
 import { IconArrowUpRight } from './icons/IconArrowUpRight'
 
-
 type Props = { width: string }
 
 function CardContent({ width }: Props) {
+
   return (
     <div className={`flex-col justify-start items-start gap-6 inline-flex ${width}`}>
       <div className=" flex-col justify-start items-start gap-3 flex">
@@ -29,9 +29,7 @@ function CardContent({ width }: Props) {
       </div>
       <div className="self-stretch justify-start items-start gap-2 inline-flex">
         {
-          categories.map((category, i) => (
-            <Tags key={i} tag={category.tag} color={category.color} />
-          ))
+          categories.map(Tags)
         }
       </div>
     </div>
