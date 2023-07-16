@@ -3,18 +3,18 @@ import SubHeading from './SubHeading'
 import Tags from './Tags'
 import { IconArrowUpRight } from './icons/IconArrowUpRight'
 
-type Props = { width: string }
+type Props = {}
 
-function CardContent({ width }: Props) {
+function CardContent({ }: Props) {
 
   return (
-    <div className={`flex-col justify-start items-start gap-6 inline-flex ${width}`}>
+    <div className={`flex-col justify-start items-start gap-6 inline-flex w-full`}>
       <div className=" flex-col justify-start items-start gap-3 flex">
         {/* <div className="self-stretch text-violet-700 text-sm font-semibold leading-tight">{ date}</div> */}
         <p className="self-stretch text-violet-700 -mt-1 text-sm font-semibold leading-5">
           Sunday , 1 Jan 2023
         </p>
-        <div className="flex-col justify-start items-start first:last:gap-3 gap-2 inline-flex">
+        <div className="flex-col justify-start items-start gap-3 inline-flex">
           <div className="self-stretch justify-start items-start gap-4 relative flex">
             <SubHeading level={4} className="grow shrink basis-0 dark:text-white text-textdark text-2xl font-semibold leading-8">
               UX review presentations

@@ -12,10 +12,10 @@ function RecentBlog({ }: Props) {
           Recent blog posts
         </SubHeading>
         <CardContainer>
-          <Card width='w-full' imageHeight='h-[228px]' className={'w-full flex-col justify-start items-start lg:gap-8 gap-6 flex'} />
-          <Card width='w-full' imageHeight='h-[200px]' className={'w-full sm:flex-row flex-col justify-start items-start lg:gap-8 gap-6 flex '} />
-          <Card width='w-full' imageHeight='h-[200px]' className={'w-full sm:flex-row flex-col justify-start items-start lg:gap-8 gap-6 flex '} />
-          <Card width='w-full' imageHeight='h-[228px]' className={'w-full lg:flex-row flex-col justify-start items-start lg:gap-8 gap-6 flex'} />
+          <Card className='card' imageHeight={'h-[228px]'} />
+          <Card className='card' imageHeight={'h-[200px]'} />
+          <Card className='card' imageHeight={'h-[200px]'} />
+          <Card className='card' imageHeight={'h-[246px]'} />
         </CardContainer>
       </div>
     </div>
