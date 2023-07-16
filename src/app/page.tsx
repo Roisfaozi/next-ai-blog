@@ -4,7 +4,7 @@ import RecentBlog from './(Home)/RecentBlog'
 
 function Home() {
   return (
-    <div className="sm:py-[30px] py-24 flex-col justify-center items-start flex w-full">
+    <div className="sm:py-[30px] py-24 flex-col justify-center gap-[30px] items-start flex w-full">
       <Heading />
       <RecentBlog />
       <AllBlogPostSection />

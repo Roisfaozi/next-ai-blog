@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import CardContent from './CardContent';
 
-type Props = { imageHeight: string, className: string }
+type Props = { imageHeight: string, className?: string }
 
 function Card({ imageHeight, className }: Props) {
   return (
