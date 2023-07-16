@@ -3,9 +3,7 @@ type Props = {}
 
 function Heading({ }: Props) {
   return (
-    <div className="border-t border-b border-dark dark:border-white justify-center items-center inline-flex w-full py-4">
-      <h1 className="dark:text-white text-center text-textdark font-bold tracking-normal w-full xl:text-[240px] 2xl:text-[266px] sm:text-[18vw] text-[17vw]">THE BLOG</h1>
-    </div>
+    <h1 className="dark:text-white border-t border-b border-dark dark:border-white w-full text-center text-textdark font-bold xl:text-[242.8px] sm:text-[18vw] text-[17vw]">THE BLOG</h1>
   )
 }
 

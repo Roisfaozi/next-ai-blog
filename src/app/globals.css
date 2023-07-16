@@ -34,8 +34,9 @@ html {
   font-size: 100%;
   border: none;
 }
+
 body {
-  @apply box-border max-w-[1440px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-5 bg-white dark:bg-dark text-[#667085] dark:text-[#C0C5D0];
+  @apply box-border max-w-[1276px] font-normal w-full justify-center items-start mx-auto md:px-[30px] px-5 bg-white dark:bg-dark text-[#667085] dark:text-[#C0C5D0];
 }
 
 .icon-instance-node {

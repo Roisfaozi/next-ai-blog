@@ -1,3 +1,4 @@
+import AllBlogPostSection from './(Home)/AllBlogPostSection'
 import Heading from './(Home)/Heading'
 import RecentBlog from './(Home)/RecentBlog'
 
@@ -6,7 +7,7 @@ function Home() {
     <div className="sm:py-[30px] py-24 flex-col justify-center items-start flex w-full">
       <Heading />
       <RecentBlog />
-
+      <AllBlogPostSection />
     </div>
   )
 }
