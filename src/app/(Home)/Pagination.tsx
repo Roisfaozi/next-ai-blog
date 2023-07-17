@@ -1,3 +1,4 @@
+import { IconArrowLeft, IconArrowRight } from '@/src/Components/icons'
 
 type Props = {}
 
@@ -6,7 +7,7 @@ function Pagination({ }: Props) {
     <div className="pt-5 border-t border-gray-200 border-opacity-30 sm:justify-between justify-center items-center gap-5 flex sm:flex-row flex-col w-full">
       <div className="Button justify-start items-start flex">
         <div className="ButtonBase justify-center items-center gap-2 flex">
-          <div className="ArrowLeft w-5 h-5 relative" />
+          <IconArrowLeft />
           <div className="Text text-zinc-100 text-sm font-medium leading-tight">Previous</div>
         </div>
       </div>
@@ -50,7 +51,7 @@ function Pagination({ }: Props) {
       <div className="Button justify-start items-start flex">
         <div className="ButtonBase justify-center items-center gap-2 flex">
           <div className="Text text-zinc-100 text-sm font-medium leading-tight">Next</div>
-          <div className="ArrowRight w-5 h-5 relative" />
+          <IconArrowRight />
         </div>
       </div>
     </div>
