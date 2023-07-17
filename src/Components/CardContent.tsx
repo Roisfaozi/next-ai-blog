@@ -1,7 +1,7 @@
 import { categories } from '../utils/constants'
 import SubHeading from './SubHeading'
 import Tags from './Tags'
-import { IconArrowUpRight } from './icons/IconArrowUpRight'
+import { IconArrowUpRight } from './icons'
 
 type Props = {}
 

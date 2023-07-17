@@ -1,1 +1,0 @@
-export { IconOutlineSun } from './IconOutlineSun'

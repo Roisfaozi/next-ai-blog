@@ -3,11 +3,10 @@ import { useTheme } from 'next-themes';
 import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState } from "react";
 import Navlink from './Navlink';
-import { IconOutlineMoon } from './icons/IconOutlineMoon';
-import { IconOutlineSun } from './icons/IconOutlineSun';
+import { IconOutlineMoon, IconOutlineSun } from './icons';
 
-const IconHamburger = dynamic(() => import('./icons/IconHamburger').then((mod) => mod.IconHamburger), { ssr: false })
-const IconClose = dynamic(() => import('./icons/IconClose').then((mod) => mod.IconClose), { ssr: false })
+const IconHamburger = dynamic(() => import('./icons').then((mod) => mod.IconHamburger), { ssr: false })
+const IconClose = dynamic(() => import('./icons').then((mod) => mod.IconClose), { ssr: false })
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
