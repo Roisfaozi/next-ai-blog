@@ -1,5 +1,6 @@
 import AllBlogPostSection from './(Home)/AllBlogPostSection'
 import Heading from './(Home)/Heading'
+import Pagination from './(Home)/Pagination'
 import RecentBlog from './(Home)/RecentBlog'
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
       <Heading />
       <RecentBlog />
       <AllBlogPostSection />
+      <Pagination />
     </div>
   )
 }

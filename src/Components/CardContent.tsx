@@ -17,13 +17,13 @@ function CardContent({ }: Props) {
         <div className="flex-col justify-start items-start gap-3 inline-flex">
           <div className="self-stretch justify-start items-start gap-4 relative flex">
             <SubHeading level={4} className="grow shrink basis-0 dark:text-white text-textdark text-2xl font-semibold leading-8">
-              UX review presentations
+              How collaboration makes us better designers
             </SubHeading>
             <div className="pt-1 flex-col justify-start items-start inline-flex">
               <IconArrowUpRight className="w-6 h-6 relative" />
             </div>
           </div>
-          <p className="self-stretch text-primary text-base font-normal leading-6">How do you create compelling presentations that wow your colleagues and impress your managers?
+          <p className="self-stretch text-primary text-base font-normal leading-6">The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...
           </p>
         </div>
       </div>
