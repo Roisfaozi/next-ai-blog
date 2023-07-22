@@ -5,7 +5,7 @@ export const navigation = [
   },
   {
     display: 'Projects',
-    path: '/projects',
+    path: '/post',
   },
   {
     display: 'About',
