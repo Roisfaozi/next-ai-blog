@@ -19,10 +19,11 @@ module.exports = {
       boxShadow: {
         poster: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
       },
-      colors: {
+      colors: ({ colors }) => ({
         dark: '#090D1F',
         textdark: '#1A1A1A',
-      },
+        violet: { ...colors.violet, 700: '#7F56D9' },
+      }),
       animation: {
         burger: 'disapear 500ms ease-in-out',
         apear: 'disapear 500ms ease-in-out',
