@@ -63,3 +63,7 @@ body {
 .text-pink {
   @apply text-[#C11574];
 }
+
+.text-content > p {
+  @apply text-base font-normal my-[6px];
+}
