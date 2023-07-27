@@ -3,10 +3,10 @@ import SubHeading from './SubHeading'
 import Tags from './Tags'
 import { IconArrowUpRight } from './icons'
 
-type Props = {}
+type Props = { post: any }
 
-function CardContent({ }: Props) {
-
+function CardContent({ post }: Props) {
+  console.log(post)
   return (
     <div className={`flex-col justify-start items-start gap-6 inline-flex w-full`}>
       <div className=" flex-col justify-start items-start gap-3 flex">

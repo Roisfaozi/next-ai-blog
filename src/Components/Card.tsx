@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import CardContent from './CardContent';
 
-type Props = { imageHeight: string, className?: string }
+type Props = { imageHeight: string, className?: string, latestPost?: any }
 
-function Card({ imageHeight, className }: Props) {
+function Card({ imageHeight, className, latestPost }: Props) {
   return (
     <div className={`${className} w-full flex-col justify-start items-start lg:gap-8 gap-6 flex`}>
       <div className={`relative w-full ${imageHeight}`}>
@@ -19,7 +19,7 @@ function Card({ imageHeight, className }: Props) {
 
         />
       </div >
-      <CardContent />
+      <CardContent post={latestPost} />
 
     </div >
   )
